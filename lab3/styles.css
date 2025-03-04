@@ -1,0 +1,52 @@
+body{
+    background-color: #345;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+}
+
+#carousel{
+    background-color: #eee;
+    color:#333;
+    border-radius: 1em;
+    width: 500px;
+    padding: 0.5em;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.card{
+    min-width: 500px;
+    max-width: 500px;
+    padding: 1em;
+    display: grid;
+    grid-template-areas: 
+            'image name'
+            'image email'
+            'image address'
+            'image phone';
+}
+ h3, h4,h5{
+    margin: 0px;
+
+}
+.card img{
+    grid-area: image;
+    border-radius: 50%;
+
+}
+
+.card h3{
+    grid-area: name;
+}
+
+.card h4{
+    grid-area: email;
+}
+
+.card h5{
+    grid-area: phone;
+}
+
+.card p{
+    grid-area: address;
+}
